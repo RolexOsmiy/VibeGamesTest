@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   characterName: Player
-  attackRange: 3
+  attackRange: 6
   attackTime: 1
   maxHealth: 99999

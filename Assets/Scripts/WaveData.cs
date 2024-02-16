@@ -11,6 +11,7 @@ public class WaveData : ScriptableObject
 public class Wave
 {
     public List<GameObject> enemies;
+    public Vector3 fightPoint;
     public float spawnDelay;
     public float spawnInterval;
 }

@@ -123,37 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &8663805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8663806}
-  m_Layer: 0
-  m_Name: FightPoint (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8663806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8663805}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.54, y: 0, z: -3.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &168426748
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168426751}
   - component: {fileID: 168426750}
-  - component: {fileID: 168426749}
   - component: {fileID: 168426752}
+  - component: {fileID: 168426753}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -173,19 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &168426749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168426748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8583309e2709c49b2c50e7dcd992a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveData: {fileID: 11400000, guid: 87a12a781770c4b4c893f69dcae7f7cb, type: 2}
 --- !u!114 &168426750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,12 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fce209e206f65c429c4b645e9e8f11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyFactory: {fileID: 168426749}
   currentWave: 0
-  fightPoints:
-  - {fileID: 8663806}
-  - {fileID: 1777601514}
-  - {fileID: 253846490}
 --- !u!4 &168426751
 Transform:
   m_ObjectHideFlags: 0
@@ -231,6 +182,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f4698272137f740b5b620fd41f0b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &168426753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168426748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8583309e2709c49b2c50e7dcd992a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveData: {fileID: 11400000, guid: 87a12a781770c4b4c893f69dcae7f7cb, type: 2}
 --- !u!1 &214961729
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,37 +332,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 425c8484ceede2b47b864f1b365564e3, type: 2}
   m_BuildHeightMesh: 0
---- !u!1 &253846489
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 253846490}
-  m_Layer: 0
-  m_Name: FightPoint (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &253846490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253846489}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.82, y: 0, z: 13.23}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &265719676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,37 +2581,6 @@ Transform:
   - {fileID: 2079452023}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1777601513
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1777601514}
-  m_Layer: 0
-  m_Name: FightPoint (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1777601514
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777601513}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.65, y: 0, z: 2.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1812231166 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 20836423db8e6c64ea1a94e68bd27b8c, type: 3}
@@ -3314,9 +3216,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 168426751}
   - {fileID: 561091063}
-  - {fileID: 253846490}
-  - {fileID: 1777601514}
-  - {fileID: 8663806}
   - {fileID: 705507995}
   - {fileID: 2144853334}
   - {fileID: 2138217445}

@@ -17,5 +17,20 @@ MonoBehaviour:
     - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
     - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
     - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    fightPoint: {x: -1.7, y: 0, z: 0.8}
+    spawnDelay: 0
+    spawnInterval: 0
+  - enemies:
+    - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    fightPoint: {x: 2.59, y: 0, z: 7.24}
+    spawnDelay: 0
+    spawnInterval: 0
+  - enemies:
+    - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    - {fileID: 5176567580305805191, guid: cd442bacadaade943b066addd56c9594, type: 3}
+    fightPoint: {x: -0.16, y: 0, z: 11.12}
     spawnDelay: 0
     spawnInterval: 0

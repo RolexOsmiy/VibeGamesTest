@@ -4,10 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     
-    [SerializeField] private EnemyFactory enemyFactory;
-    
     [SerializeField] private int currentWave = 0;
-    [SerializeField] private Transform[] fightPoints;
 
     // Инициализация игры
 
@@ -26,12 +23,12 @@ public class GameManager : MonoBehaviour
     {
         NextWave(false);
     }
-
+    
     public Vector3 GetFightPoint()
     {
-        return fightPoints[currentWave].position;
+        return EnemyFactory.instance.GetFightPoint();
     }
-    
+
     public int GetCurrentWave()
     {
         return currentWave;
@@ -42,6 +39,7 @@ public class GameManager : MonoBehaviour
         if (withIncrement)
             currentWave++;
         
-        enemyFactory.CreateWave();
+        EnemyFactory.instance.CreateWave();
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().MoveTo(EnemyFactory.instance.GetFightPoint());
     }
 }

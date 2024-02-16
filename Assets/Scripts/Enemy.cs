@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy : Character
 {
+    [SerializeField] private LayerMask layerMask;
     private void Awake()
     {
         DataInitialize();
@@ -39,6 +41,6 @@ public class Enemy : Character
     {
         base.Die();
         EnemyManager.Instance.RemoveEnemy(this);
-
+        gameObject.layer = layerMask;
     }
 }

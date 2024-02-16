@@ -8,11 +8,6 @@ public class PlayerController : Character
         DataInitialize();
     }
 
-    private void Start()
-    {
-        MoveTo(GameManager.Instance.GetFightPoint());
-    }
-
     private void Update()
     {
         if (!isDead)
