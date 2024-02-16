@@ -1,4 +1,6 @@
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class PlayerController : Character
@@ -31,6 +33,21 @@ public class PlayerController : Character
                     closestEnemy.GetComponent<IDamage>().Damage();
                 }
             }
+        }
+    }
+
+    public override void TakeDamage(int damageAmount)
+    {
+        base.TakeDamage(damageAmount);
+
+        if (Health <= 0)
+        {
+            Die();
+            
+            DOVirtual.DelayedCall(3f, () =>
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            });
         }
     }
 
